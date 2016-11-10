@@ -4,6 +4,7 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#D3D3D3"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
@@ -15,17 +16,21 @@
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:orientation="vertical"
-        android:id="@+id/istl">
+        android:id="@+id/istl"
+
+        >
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/istl">
+            android:layout_below="@id/istl"
+            android:background="#fff">
 
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:src="@drawable/vodafone"
-                android:scaleType="fitXY"/>
+                android:scaleType="fitXY"
+                />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -38,29 +43,45 @@
         </RelativeLayout>
 
         <RelativeLayout
+
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:background="#fff">
 
             <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="balance"/>
+                android:id="@+id/vd"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:src="@drawable/message"
+                android:scaleType="fitXY"
+                android:padding="0dp"
+                />
+
             <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="100dp"
-                android:text="Data"/>
+                android:id="@+id/vb"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:src="@drawable/balance"
+                android:scaleType="fitXY"
+                android:layout_marginLeft="125dp"
+                android:padding="0dp"
+                />
             <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="200dp"
-                android:text="sms"/>
+                android:id="@+id/vs"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="250dp"
+                android:padding="0dp"
+                android:src="@drawable/message"
+                android:scaleType="fitXY"
+                />
         </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/istl">
+            android:layout_marginTop="15dp"
+            android:background="#fff">
 
             <ImageView
                 android:layout_width="50dp"
@@ -79,27 +100,40 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:background="@android:color/background_light">
 
             <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="balance"/>
+                android:id="@+id/ad"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:src="@drawable/message"
+                android:scaleType="fitXY"
+                android:padding="0dp"/>
             <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="100dp"
-                android:text="Data"/>
+                android:id="@+id/ab"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:src="@drawable/balance"
+                android:scaleType="fitXY"
+                android:layout_marginLeft="125dp"
+                android:padding="0dp"
+                />
             <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="200dp"
-                android:text="sms"/>
+                android:id="@+id/as"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:src="@drawable/message"
+                android:scaleType="fitXY"
+                android:text="sms"
+                android:layout_marginLeft="250dp"
+                android:padding="0dp"/>
         </RelativeLayout>
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/istl"
+            android:background="#fff"
+            android:layout_marginTop="15dp"
             >
 
             <ImageView
@@ -123,28 +157,40 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:background="#fff">
 
             <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="balance"/>
+                android:id="@+id/id"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:src="@drawable/message"
+                android:scaleType="fitXY"
+                android:padding="0dp"/>
             <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="100dp"
-                android:text="Data"/>
+                android:id="@+id/ib"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:src="@drawable/balance"
+                android:scaleType="fitXY"
+                android:layout_marginLeft="125dp"
+                android:padding="0dp"/>
             <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="200dp"
-                android:text="sms"/>
+                android:id="@+id/is"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:src="@drawable/message"
+                android:scaleType="fitXY"
+                android:text="sms"
+                android:layout_marginLeft="250dp"
+                android:padding="0dp"/>
         </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/istl">
+            android:layout_marginTop="15dp"
+            android:background="#fff">
 
             <ImageView
                 android:layout_width="50dp"
@@ -153,7 +199,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="bsnl"
+                android:text="BSNL"
                 android:textColor="#000"
                 android:textSize="25dp"
                 android:layout_marginLeft="60dp"
@@ -163,27 +209,39 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:background="#fff">
 
             <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="balance"/>
+                android:id="@+id/bd"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:src="@drawable/message"
+                android:scaleType="fitXY"
+                android:padding="0dp"/>
             <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="100dp"
-                android:text="Data"/>
+                android:id="@+id/bb"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:src="@drawable/balance"
+                android:scaleType="fitXY"
+                android:layout_marginLeft="125dp"
+                android:padding="0dp"/>
             <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="200dp"
+                android:id="@+id/bs"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:src="@drawable/message"
+                android:scaleType="fitXY"
+                android:layout_marginLeft="250dp"
+                android:padding="0dp"
                 android:text="sms"/>
         </RelativeLayout>
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/istl"
+            android:background="#fff"
+            android:layout_marginTop="15dp"
             >
 
             <ImageView
@@ -194,7 +252,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="DO CO MO"
+                android:text="DOCOMO"
                 android:textColor="#000"
                 android:textSize="25dp"
                 android:layout_marginLeft="60dp"
@@ -204,27 +262,37 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:background="#fff">
 
             <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="balance"/>
+                android:id="@+id/dd"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:src="@drawable/message"
+                android:scaleType="fitXY"
+                android:padding="0dp"/>
             <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="100dp"
-                android:text="Data"/>
+                android:id="@+id/db"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:src="@drawable/balance"
+                android:scaleType="fitXY"
+                android:layout_marginLeft="125dp"
+                android:padding="0dp"/>
             <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="200dp"
-                android:text="sms"/>
+                android:id="@+id/ds"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:src="@drawable/message"
+                android:scaleType="fitXY"
+                android:layout_marginLeft="250dp"
+                android:padding="0dp"/>
         </RelativeLayout>
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/istl">
+            android:background="#fff">
 
             <ImageView
                 android:layout_width="50dp"
@@ -243,28 +311,39 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:layout_marginTop="15dp">
 
             <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="balance"/>
+                android:id="@+id/vcd"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:src="@drawable/message"
+                android:scaleType="fitXY"
+                android:padding="0dp"/>
             <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="100dp"
-                android:text="Data"/>
+                android:id="@+id/vcb"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:src="@drawable/balance"
+                android:scaleType="fitXY"
+                android:layout_marginLeft="125dp"
+                android:padding="0dp"/>
             <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="200dp"
-                android:text="sms"/>
+                android:id="@+id/vcs"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:src="@drawable/message"
+                android:scaleType="fitXY"
+                android:layout_marginLeft="250dp"
+                android:padding="0dp"/>
         </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/istl">
+            android:background="#fff">
 
             <ImageView
                 android:layout_width="50dp"
@@ -273,7 +352,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="reliance"
+                android:text="Reliance"
                 android:textColor="#000"
                 android:textSize="25dp"
                 android:layout_marginLeft="60dp"
@@ -283,27 +362,38 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:background="#fff">
 
             <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="balance"/>
+                android:id="@+id/rd"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:src="@drawable/message"
+                android:scaleType="fitXY"
+                android:padding="0dp"/>
             <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="100dp"
-                android:text="Data"/>
+                android:id="@+id/rb"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:src="@drawable/balance"
+                android:scaleType="fitXY"
+                android:layout_marginLeft="125dp"
+                android:padding="0dp"/>
             <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="200dp"
-                android:text="sms"/>
+                android:id="@+id/rs"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:src="@drawable/message"
+                android:scaleType="fitXY"
+                android:layout_marginLeft="250dp"
+                android:padding="0dp"/>
         </RelativeLayout>
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/istl">
+            android:background="#fff"
+            >
 
             <ImageView
                 android:layout_width="50dp"
@@ -312,7 +402,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="aircel"
+                android:text="AIRCEL"
                 android:textColor="#000"
                 android:textSize="25dp"
                 android:layout_marginLeft="60dp"
@@ -322,22 +412,34 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:layout_marginTop="15dp">
 
             <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="balance"/>
+                android:id="@+id/acd"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:src="@drawable/message"
+                android:scaleType="fitXY"
+                android:padding="0dp"/>
             <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="100dp"
-                android:text="Data"/>
+                android:id="@+id/acb"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:src="@drawable/balance"
+                android:scaleType="fitXY"
+                android:layout_marginLeft="125dp"
+                android:padding="0dp"/>
             <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="200dp"
-                android:text="sms"/>
+                android:id="@+id/acs"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:src="@drawable/message"
+                android:scaleType="fitXY"
+                android:layout_marginLeft="250dp"
+                android:text="sms"
+                android:padding="0dp"/>
         </RelativeLayout>
 
 
