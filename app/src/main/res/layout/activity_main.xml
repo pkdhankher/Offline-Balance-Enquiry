@@ -4,480 +4,689 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#D3D3D3"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.pawan.offlinebalanceenquiry.MainActivity">
 
+    android:background="#f4f5f5"
+    tools:context="com.example.pawan.offlinebalanceenquiry.MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:orientation="vertical"
-        android:id="@+id/istl"
-
-        >
-        <view
-            android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:background="#836a6a">
-        </view>
+        android:id="@+id/istl">
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/istl"
-            android:background="#fff">
+            android:layout_marginTop="1dp"
+            android:background="@drawable/top_layout">
 
-            <ImageView
+            <ImageButton
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:src="@drawable/vodafone"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/help"
+                android:src="@drawable/hlp"
                 android:scaleType="fitXY"
-                />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="vodafone"
-                android:textColor="#000"
-                android:textSize="20dp"
-                android:layout_marginLeft="60dp"
-                android:layout_marginTop="7dp" />
-
-
+                android:padding="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:background="#3569ea"
+                android:onClick="help"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SWAP SIM"
+                android:layout_alignParentRight="true"
+                android:id="@+id/swap"
+                android:layout_margin="10dp"
+                android:background="@drawable/bttn_layout"
+                android:textColor="#fff"
+                android:textSize="18dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:onClick="swap"/>
         </RelativeLayout>
-        <view
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#000"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp">
-        </view>
-        <RelativeLayout
 
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#b1a6a6">
-
-            <ImageButton
-                android:id="@+id/vd"
-                android:layout_width="100dp"
-                android:layout_height="50dp"
-                android:src="@drawable/message"
-                android:scaleType="fitXY"
-                android:padding="0dp"
-                />
-
-            <ImageButton
-                android:id="@+id/vb"
-                android:layout_width="100dp"
-                android:layout_height="50dp"
-                android:src="@drawable/balance"
-                android:scaleType="fitXY"
-                android:layout_marginLeft="125dp"
-                android:padding="0dp"
-                android:background="b1a6a6"
-                />
-            <ImageButton
-                android:id="@+id/vs"
-                android:layout_width="100dp"
-                android:layout_height="50dp"
-                android:layout_marginLeft="250dp"
-                android:padding="0dp"
-                android:src="@drawable/message"
-                android:scaleType="fitXY"
-                />
-        </RelativeLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        android:background="@drawable/layoutcrnr">
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:background="#fff">
+            android:layout_height="wrap_content">
 
             <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:src="@drawable/airtel" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="airtel"
-                android:textColor="#000"
-                android:textSize="25dp"
-                android:layout_marginLeft="60dp"
-                android:layout_marginTop="7dp" />
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@android:color/background_light">
-
-            <ImageButton
-                android:id="@+id/ad"
-                android:layout_width="100dp"
-                android:layout_height="50dp"
-                android:src="@drawable/message"
-                android:scaleType="fitXY"
-                android:padding="0dp"/>
-            <ImageButton
-                android:id="@+id/ab"
-                android:layout_width="100dp"
-                android:layout_height="50dp"
-                android:src="@drawable/balance"
-                android:scaleType="fitXY"
-                android:layout_marginLeft="125dp"
-                android:padding="0dp"
-                />
-            <ImageButton
-                android:id="@+id/as"
-                android:layout_width="100dp"
-                android:layout_height="50dp"
-                android:src="@drawable/message"
-                android:scaleType="fitXY"
-                android:text="sms"
-                android:layout_marginLeft="250dp"
-                android:padding="0dp"/>
-        </RelativeLayout>
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#fff"
-            android:layout_marginTop="15dp"
-            >
-
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:src="@drawable/idea"
-                android:scaleType="fitXY"
-                android:cropToPadding="true" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="idea"
-                android:textColor="#000"
-                android:textSize="25dp"
-                android:layout_marginLeft="60dp"
-                android:layout_marginTop="7dp"
-
-                />
-
-        </RelativeLayout>
-        <view
-            android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:background="#000">
-        </view>
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#fff">
-
-            <ImageButton
-                android:id="@+id/id"
-                android:layout_width="100dp"
-                android:layout_height="50dp"
-                android:src="@drawable/message"
-                android:scaleType="fitXY"
-                android:padding="0dp"/>
-            <ImageButton
-                android:id="@+id/ib"
-                android:layout_width="100dp"
-                android:layout_height="50dp"
-                android:src="@drawable/balance"
-                android:scaleType="fitXY"
-                android:layout_marginLeft="125dp"
-                android:padding="0dp"/>
-            <ImageButton
-                android:id="@+id/is"
-                android:layout_width="100dp"
-                android:layout_height="50dp"
-                android:src="@drawable/message"
-                android:scaleType="fitXY"
-                android:text="sms"
-                android:layout_marginLeft="250dp"
-                android:padding="0dp"/>
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:background="#fff">
-
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:src="@drawable/idea" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="BSNL"
-                android:textColor="#000"
-                android:textSize="25dp"
-                android:layout_marginLeft="60dp"
-                android:layout_marginTop="7dp" />
-
-        </RelativeLayout>
-        <view
-            android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:background="#000">
-        </view>
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#fff">
-
-            <ImageButton
-                android:id="@+id/bd"
-                android:layout_width="100dp"
-                android:layout_height="50dp"
-                android:src="@drawable/message"
-                android:scaleType="fitXY"
-                android:padding="0dp"/>
-            <ImageButton
-                android:id="@+id/bb"
-                android:layout_width="100dp"
-                android:layout_height="50dp"
-                android:src="@drawable/balance"
-                android:scaleType="fitXY"
-                android:layout_marginLeft="125dp"
-                android:padding="0dp"/>
-            <ImageButton
-                android:id="@+id/bs"
-                android:layout_width="100dp"
-                android:layout_height="50dp"
-                android:src="@drawable/message"
-                android:scaleType="fitXY"
-                android:layout_marginLeft="250dp"
-                android:padding="0dp"
-                android:text="sms"/>
-        </RelativeLayout>
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#fff"
-            android:layout_marginTop="15dp"
-            >
-
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:src="@drawable/docomo"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/airtel"
                 android:scaleType="fitXY"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="DOCOMO"
+                android:text="Vodafone"
                 android:textColor="#000"
                 android:textSize="25dp"
                 android:layout_marginLeft="60dp"
                 android:layout_marginTop="7dp" />
 
         </RelativeLayout>
-        <view
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:background="#000">
-        </view>
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#fff">
+            android:layout_height="1dp"
+            android:background="#cfcfcf"/>
 
-            <ImageButton
-                android:id="@+id/dd"
-                android:layout_width="100dp"
-                android:layout_height="50dp"
-                android:src="@drawable/message"
-                android:scaleType="fitXY"
-                android:padding="0dp"/>
-            <ImageButton
-                android:id="@+id/db"
-                android:layout_width="100dp"
-                android:layout_height="50dp"
-                android:src="@drawable/balance"
-                android:scaleType="fitXY"
-                android:layout_marginLeft="125dp"
-                android:padding="0dp"/>
-            <ImageButton
-                android:id="@+id/ds"
-                android:layout_width="100dp"
-                android:layout_height="50dp"
-                android:src="@drawable/message"
-                android:scaleType="fitXY"
-                android:layout_marginLeft="250dp"
-                android:padding="0dp"/>
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/vodad"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="CHECK DATA"
+                android:onClick="onClick"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="10dp"
+                android:background="@drawable/bttn_layout"
+                android:textColor="#fff"
+                android:textSize="11dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"/>
+
+            <Button
+                android:id="@+id/vodab"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:onClick="onClick"
+                android:text="CHECK BALANCE"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:background="@drawable/bttn_layout"
+                android:textColor="#fff"
+                android:textSize="11dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"/>
+            <Button
+                android:id="@+id/vodas"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:onClick="onClick"
+                android:text="CHECK SMS"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/bttn_layout"
+                android:textColor="#fff"
+                android:textSize="11dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"/>
         </RelativeLayout>
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#fff">
+    </LinearLayout>
 
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:src="@drawable/videocon" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical"
+            android:background="@drawable/layoutcrnr">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/airtel"
+                    android:scaleType="fitXY"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Airtel"
+                    android:textColor="#000"
+                    android:textSize="25dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="7dp" />
+
+            </RelativeLayout>
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="videocon"
-                android:textColor="#000"
-                android:textSize="25dp"
-                android:layout_marginLeft="60dp"
-                android:layout_marginTop="7dp" />
+                android:layout_height="1dp"
+                android:background="#cfcfcf"/>
 
-        </RelativeLayout>
-        <view
-            android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:background="#000">
-        </view>
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#fff"
-            android:layout_marginTop="15dp">
+            <RelativeLayout
 
-            <ImageButton
-                android:id="@+id/vcd"
-                android:layout_width="100dp"
-                android:layout_height="50dp"
-                android:src="@drawable/message"
-                android:scaleType="fitXY"
-                android:padding="0dp"/>
-            <ImageButton
-                android:id="@+id/vcb"
-                android:layout_width="100dp"
-                android:layout_height="50dp"
-                android:src="@drawable/balance"
-                android:scaleType="fitXY"
-                android:layout_marginLeft="125dp"
-                android:padding="0dp"/>
-            <ImageButton
-                android:id="@+id/vcs"
-                android:layout_width="100dp"
-                android:layout_height="50dp"
-                android:src="@drawable/message"
-                android:scaleType="fitXY"
-                android:layout_marginLeft="250dp"
-                android:padding="0dp"/>
-        </RelativeLayout>
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#fff">
+                <Button
+                    android:id="@+id/aird"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="CHECK DATA"
+                    android:onClick="onClick"
+                    android:layout_alignParentLeft="true"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/bttn_layout"
+                    android:textColor="#fff"
+                    android:textSize="11dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"/>
 
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:src="@drawable/idea" />
+                <Button
+                    android:id="@+id/airb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:onClick="onClick"
+                    android:text="CHECK BALANCE"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/bttn_layout"
+                    android:textColor="#fff"
+                    android:textSize="11dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"/>
+                <Button
+                    android:id="@+id/airs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:onClick="onClick"
+                    android:text="CHECK SMS"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/bttn_layout"
+                    android:textColor="#fff"
+                    android:textSize="11dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical"
+            android:background="@drawable/layoutcrnr">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/airtel"
+                    android:scaleType="fitXY"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Idea"
+                    android:textColor="#000"
+                    android:textSize="25dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="7dp" />
+
+            </RelativeLayout>
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="Reliance"
-                android:textColor="#000"
-                android:textSize="25dp"
-                android:layout_marginLeft="60dp"
-                android:layout_marginTop="7dp" />
+                android:layout_height="1dp"
+                android:background="#cfcfcf"/>
 
-        </RelativeLayout>
-        <view
-            android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:background="#000">
-        </view>
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#fff">
+            <RelativeLayout
 
-            <ImageButton
-                android:id="@+id/rd"
-                android:layout_width="100dp"
-                android:layout_height="50dp"
-                android:src="@drawable/message"
-                android:scaleType="fitXY"
-                android:padding="0dp"/>
-            <ImageButton
-                android:id="@+id/rb"
-                android:layout_width="100dp"
-                android:layout_height="50dp"
-                android:src="@drawable/balance"
-                android:scaleType="fitXY"
-                android:layout_marginLeft="125dp"
-                android:padding="0dp"/>
-            <ImageButton
-                android:id="@+id/rs"
-                android:layout_width="100dp"
-                android:layout_height="50dp"
-                android:src="@drawable/message"
-                android:scaleType="fitXY"
-                android:layout_marginLeft="250dp"
-                android:padding="0dp"/>
-        </RelativeLayout>
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#fff"
-            >
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:src="@drawable/aircel" />
+                <Button
+                    android:id="@+id/idead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="CHECK DATA"
+                    android:onClick="onClick"
+                    android:layout_alignParentLeft="true"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/bttn_layout"
+                    android:textColor="#fff"
+                    android:textSize="11dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"/>
+
+                <Button
+                    android:id="@+id/ideab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:onClick="onClick"
+                    android:text="CHECK BALANCE"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/bttn_layout"
+                    android:textColor="#fff"
+                    android:textSize="11dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"/>
+                <Button
+                    android:id="@+id/ideas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:onClick="onClick"
+                    android:text="CHECK SMS"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/bttn_layout"
+                    android:textColor="#fff"
+                    android:textSize="11dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical"
+            android:background="@drawable/layoutcrnr">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/airtel"
+                    android:scaleType="fitXY"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Bsnl"
+                    android:textColor="#000"
+                    android:textSize="25dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="7dp" />
+
+            </RelativeLayout>
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="AIRCEL"
-                android:textColor="#000"
-                android:textSize="25dp"
-                android:layout_marginLeft="60dp"
-                android:layout_marginTop="7dp" />
+                android:layout_height="1dp"
+                android:background="#cfcfcf"/>
 
-        </RelativeLayout>
-        <view
-            android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:background="#000">
-        </view>
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#fff"
-            android:layout_marginTop="15dp">
+            <RelativeLayout
 
-            <ImageButton
-                android:id="@+id/acd"
-                android:layout_width="100dp"
-                android:layout_height="50dp"
-                android:src="@drawable/message"
-                android:scaleType="fitXY"
-                android:padding="0dp"/>
-            <ImageButton
-                android:id="@+id/acb"
-                android:layout_width="100dp"
-                android:layout_height="50dp"
-                android:src="@drawable/balance"
-                android:scaleType="fitXY"
-                android:layout_marginLeft="125dp"
-                android:padding="0dp"/>
-            <ImageButton
-                android:id="@+id/acs"
-                android:layout_width="100dp"
-                android:layout_height="50dp"
-                android:src="@drawable/message"
-                android:scaleType="fitXY"
-                android:layout_marginLeft="250dp"
-                android:text="sms"
-                android:padding="0dp"/>
-        </RelativeLayout>
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/bsnld"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="CHECK DATA"
+                    android:onClick="onClick"
+                    android:layout_alignParentLeft="true"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/bttn_layout"
+                    android:textColor="#fff"
+                    android:textSize="11dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"/>
+
+                <Button
+                    android:id="@+id/bsnlb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:onClick="onClick"
+                    android:text="CHECK BALANCE"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/bttn_layout"
+                    android:textColor="#fff"
+                    android:textSize="11dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"/>
+                <Button
+                    android:id="@+id/bsnls"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:onClick="onClick"
+                    android:text="CHECK SMS"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/bttn_layout"
+                    android:textColor="#fff"
+                    android:textSize="11dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical"
+            android:background="@drawable/layoutcrnr">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/airtel"
+                    android:scaleType="fitXY"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Docomo"
+                    android:textColor="#000"
+                    android:textSize="25dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="7dp" />
+
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#cfcfcf"/>
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/docd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="CHECK DATA"
+                    android:onClick="onClick"
+                    android:layout_alignParentLeft="true"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/bttn_layout"
+                    android:textColor="#fff"
+                    android:textSize="11dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"/>
+
+                <Button
+                    android:id="@+id/docb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:onClick="onClick"
+                    android:text="CHECK BALANCE"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/bttn_layout"
+                    android:textColor="#fff"
+                    android:textSize="11dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"/>
+                <Button
+                    android:id="@+id/docs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:onClick="onClick"
+                    android:text="CHECK SMS"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/bttn_layout"
+                    android:textColor="#fff"
+                    android:textSize="11dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical"
+            android:background="@drawable/layoutcrnr">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/airtel"
+                    android:scaleType="fitXY"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Videocon"
+                    android:textColor="#000"
+                    android:textSize="25dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="7dp" />
+
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#cfcfcf"/>
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/vidd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="CHECK DATA"
+                    android:onClick="onClick"
+                    android:layout_alignParentLeft="true"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/bttn_layout"
+                    android:textColor="#fff"
+                    android:textSize="11dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"/>
+
+                <Button
+                    android:id="@+id/vidb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:onClick="onClick"
+                    android:text="CHECK BALANCE"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/bttn_layout"
+                    android:textColor="#fff"
+                    android:textSize="11dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"/>
+                <Button
+                    android:id="@+id/vids"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:onClick="onClick"
+                    android:text="CHECK SMS"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/bttn_layout"
+                    android:textColor="#fff"
+                    android:textSize="11dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical"
+            android:background="@drawable/layoutcrnr">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/airtel"
+                    android:scaleType="fitXY"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Reliance"
+                    android:textColor="#000"
+                    android:textSize="25dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="7dp" />
+
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#cfcfcf"/>
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/reld"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="CHECK DATA"
+                    android:onClick="onClick"
+                    android:layout_alignParentLeft="true"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/bttn_layout"
+                    android:textColor="#fff"
+                    android:textSize="11dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"/>
+
+                <Button
+                    android:id="@+id/relb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:onClick="onClick"
+                    android:text="CHECK BALANCE"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/bttn_layout"
+                    android:textColor="#fff"
+                    android:textSize="11dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"/>
+                <Button
+                    android:id="@+id/rels"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:onClick="onClick"
+                    android:text="CHECK SMS"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/bttn_layout"
+                    android:textColor="#fff"
+                    android:textSize="11dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical"
+            android:background="@drawable/layoutcrnr">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/airtel"
+                    android:scaleType="fitXY"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Aircel"
+                    android:textColor="#000"
+                    android:textSize="25dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="7dp" />
+
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#cfcfcf"/>
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/arcld"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="CHECK DATA"
+                    android:onClick="onClick"
+                    android:layout_alignParentLeft="true"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/bttn_layout"
+                    android:textColor="#fff"
+                    android:textSize="11dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"/>
+
+                <Button
+                    android:id="@+id/arclb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:onClick="onClick"
+                    android:text="CHECK BALANCE"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/bttn_layout"
+                    android:textColor="#fff"
+                    android:textSize="11dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"/>
+                <Button
+                    android:id="@+id/arcls"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:onClick="onClick"
+                    android:text="CHECK SMS"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/bttn_layout"
+                    android:textColor="#fff"
+                    android:textSize="11dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"/>
+            </RelativeLayout>
+        </LinearLayout>
+
 
 
     </LinearLayout>
