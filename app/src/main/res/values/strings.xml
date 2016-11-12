@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Offline Balance Enquiry</string>
+    <string name="alert_msg">
+        <b>Default/Single SIM User :</b>\n
+        "if you want to check on default sim or single SIM user simply check whatever you want to check"\n
+        <b>Another SIM :</b>\n
+      "If you want to check of another SIM which is not dialer default , Just click on 'DEFAULT/SINGLE SIM' button for multi sim user and proceed...
+    </string>
 </resources>
